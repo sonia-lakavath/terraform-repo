@@ -101,9 +101,7 @@ resource "aws_instance" "web_instance" {
               #!/bin/bash
               yum update -y
               yum install -y git
-              git clone https://github.com/sonia-lakavath/terraform-repo.git /home/ec2-user/web-server-setup
-              chmod +x /home/ec2-user/web-server-setup/setup.sh
-              /home/ec2-user/web-server-setup/setup.sh
+            
               EOF
 
   tags = {
